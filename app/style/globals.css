@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+/* body {
+  min-height: 2000px;
+} */
+
+.gradient-text {
+  --bg-size: 400%;
+  --color-one: #e213e2;
+  --color-two: #8513e2;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  animation: move-bg 8s infinite linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .gradient-text {
+    animation: move-bg 8s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-black hover:bg-[#190d24] border-[0.5px] border-purple-900 rounded-3xl p-[20px] md:p-[40px] drop-shadow-sm hover:drop-shadow-lg transition duration-150 ease-out hover:ease-in hover:scale-[1.03];
+  }
+}
