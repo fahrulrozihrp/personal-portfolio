@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <section className="flex flex-wrap pt-10 md:pt-20 gap-y-20 md:justify-between">
+      <section className="flex flex-wrap pt-10 md:pt-14 gap-y-20 md:justify-between">
         {/* ---about--- */}
         <About />
         {/* ---skill--- */}
