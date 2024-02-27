@@ -25,7 +25,14 @@ function Skill() {
       </div>
       <div className="flex flex-wrap gap-10 justify-center">
         {skills.map((item) => (
-          <Image src={item.image_url} width={75} height={75} alt={item.name} />
+          <div key={item.name}>
+            <Image
+              src={item.image_url}
+              width={75}
+              height={75}
+              alt={item.name}
+            />
+          </div>
         ))}
       </div>
     </div>
