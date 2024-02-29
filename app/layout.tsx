@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Raleway } from "next/font/google";
 import "./style/globals.css";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 const raleway = Raleway({ subsets: ["latin"] });
@@ -17,8 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} mx-[8%] md:mx-[5%]`}>
-        {children}
+      <body
+        className={`${raleway.className} mx-[5%] md:mx-[5%] bg-black dark:bg-slate-400`}
+      >
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

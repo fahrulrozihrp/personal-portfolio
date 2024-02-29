@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  background-color: black;
+  /* background-color: black; */
   scroll-behavior: smooth;
 }
 
@@ -41,6 +41,6 @@ html {
 
 @layer components {
   .card {
-    @apply bg-black hover:bg-[#190d24] border border-purple-900 rounded-3xl p-[20px] md:p-[40px] drop-shadow-sm hover:drop-shadow-lg transition duration-150 ease-out hover:ease-in hover:scale-[1.03];
+    @apply bg-black dark:bg-white hover:bg-[#190d24] border border-purple-900 rounded-3xl p-[20px] md:p-[40px] drop-shadow-sm hover:drop-shadow-lg transition duration-150 ease-out hover:ease-in hover:scale-[1.03];
   }
 }

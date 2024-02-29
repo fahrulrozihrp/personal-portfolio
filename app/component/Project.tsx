@@ -106,8 +106,11 @@ function Project() {
                   </div>
                   <p className="text-lg opacity-70">{item.description}</p>
                 </div>
+
                 <a href={item.link} className="mt-auto">
-                  <Button title={"Visit"} />
+                  <div className="flex bg-[#8513e2] rounded-full px-1 py-1 justify-center">
+                    <p>Visit</p>
+                  </div>
                 </a>
               </div>
             ))}
