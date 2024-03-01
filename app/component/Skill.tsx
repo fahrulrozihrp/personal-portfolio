@@ -19,7 +19,7 @@ const skills = [
 
 function Skill() {
   return (
-    <div className="text-white dark:text-black text-[30px] md:text-[40px] flex flex-wrap leading-none font-bold tracking-tight h-[500px] md:h-[400px] w-[500px] card">
+    <div className="text-white dark:text-black dark:hover:text-white text-[30px] md:text-[40px] flex flex-wrap leading-none font-bold tracking-tight h-[500px] md:h-[400px] w-[500px] card">
       <div>
         <h1>Skills</h1>
       </div>

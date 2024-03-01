@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${raleway.className} mx-[5%] md:mx-[5%] bg-black dark:bg-purple-300`}
+        className={`${raleway.className} mx-[5%] md:mx-[5%] bg-black dark:bg-purple-200`}
       >
         <Providers>{children}</Providers>
       </body>

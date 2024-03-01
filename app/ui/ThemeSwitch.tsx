@@ -26,7 +26,7 @@ function ThemeSwitch() {
         className={`flex h-6 w-10 rounded-full cursor-pointer border border-black items-center justify-end bg-black`}
       >
         <motion.div
-          className={`h-5 w-5 rounded-full bg-purple-300`}
+          className={`h-5 w-5 rounded-full bg-purple-200`}
           layout
           transition={{ type: "spring", stiffness: 600, damping: 30 }}
         />
@@ -43,7 +43,7 @@ function ThemeSwitch() {
     return (
       <div
         onClick={handleClick}
-        className={`flex h-6 w-10 rounded-full cursor-pointer border border-black items-center justify-start bg-purple-300 `}
+        className={`flex h-6 w-10 rounded-full cursor-pointer border border-black items-center justify-start bg-purple-200 `}
       >
         <motion.div
           className={`h-5 w-5 rounded-full bg-black`}
