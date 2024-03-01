@@ -74,14 +74,14 @@ function Project() {
       {/* <div className="text-white text-[40px] bg-red-600">Projects</div> */}
       <section className="scroll-mt-10" id="portfolios">
         <div className="flex flex-col gap-8">
-          <h3 className="text-white text-2xl leading-none font-bold tracking-tight">
+          <h3 className="text-white dark:text-black text-2xl leading-none font-bold tracking-tight">
             Projects
           </h3>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {projects.map((item) => (
               <div
-                className="bg-[#282828] border border-[#4f4f4f] rounded-xl p-4 text-white !flex !flex-col gap-4 hover:border-purple-900 hover:bg-[#190d24] duration-300 transition-all"
+                className="bg-[#190d24] border  border-purple-900 rounded-xl p-4 text-white !flex !flex-col gap-4 hover:border-[#4f4f4f] hover:bg-[#282828] duration-300 transition-all"
                 key={item.name}
               >
                 <div className="relative h-[200px]">

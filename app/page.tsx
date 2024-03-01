@@ -18,7 +18,7 @@ export default function Home() {
         <div className="bottom-10 flex justify-center w-full">
           <a
             href="#project"
-            className="text-white/70 text-center border border-purple-900 px-3 py-2 rounded-full text-xs font-semibold hover:bg-cyan-500/50 hover:text-white transition-all duration-300 animate-bounce"
+            className="text-white/70 dark:text-black text-center border border-purple-900 px-3 py-2 rounded-full text-xs font-semibold hover:bg-cyan-500/50 hover:text-white transition-all duration-300 animate-bounce"
           >
             Check my Projects
           </a>

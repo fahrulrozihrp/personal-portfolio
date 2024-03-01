@@ -17,9 +17,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${raleway.className} mx-[5%] md:mx-[5%] bg-black dark:bg-slate-400`}
+        className={`${raleway.className} mx-[5%] md:mx-[5%] bg-black dark:bg-purple-300`}
       >
         <Providers>{children}</Providers>
       </body>

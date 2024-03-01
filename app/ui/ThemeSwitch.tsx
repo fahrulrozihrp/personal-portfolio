@@ -5,29 +5,28 @@ import { motion } from "framer-motion";
 
 function ThemeSwitch() {
   const [toggle, setToggle] = useState<boolean>(true);
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState<boolean>(false);
   const { setTheme, resolvedTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
   if (!mounted)
     return (
-      <div className="h-6 w-10 rounded-full bg-white border border-black"></div>
+      <div className="h-6 w-10 rounded-full bg-purple-300 border border-black"></div>
     );
 
-  if (resolvedTheme === "light") {
+  if (resolvedTheme === "dark") {
     const handleClick = () => {
       setToggle(!toggle);
-      setTheme("dark");
+      setTheme("light");
     };
+
     return (
       <div
         onClick={handleClick}
-        className={`flex h-6 w-10 rounded-full cursor-pointer border border-black items-center ${
-          toggle ? "justify-start bg-white" : "justify-end bg-purple-900"
-        }`}
+        className={`flex h-6 w-10 rounded-full cursor-pointer border border-black items-center justify-end bg-black`}
       >
         <motion.div
-          className={`h-5 w-5 rounded-full ${toggle ? "bg-black" : "bg-white"}`}
+          className={`h-5 w-5 rounded-full bg-purple-300`}
           layout
           transition={{ type: "spring", stiffness: 600, damping: 30 }}
         />
@@ -35,20 +34,19 @@ function ThemeSwitch() {
     );
   }
 
-  if (resolvedTheme === "dark") {
+  if (resolvedTheme === "light") {
     const handleClick = () => {
       setToggle(!toggle);
-      setTheme("light");
+      setTheme("dark");
     };
+
     return (
       <div
         onClick={handleClick}
-        className={`flex h-6 w-10 rounded-full cursor-pointer border border-black items-center ${
-          toggle ? "justify-start bg-white" : "justify-end bg-purple-900"
-        }`}
+        className={`flex h-6 w-10 rounded-full cursor-pointer border border-black items-center justify-start bg-purple-300 `}
       >
         <motion.div
-          className={`h-5 w-5 rounded-full ${toggle ? "bg-black" : "bg-white"}`}
+          className={`h-5 w-5 rounded-full bg-black`}
           layout
           transition={{ type: "spring", stiffness: 600, damping: 30 }}
         />
